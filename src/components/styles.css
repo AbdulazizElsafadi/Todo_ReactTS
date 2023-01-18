@@ -1,0 +1,133 @@
+.Form {
+  display: flex;
+  width: 95%;
+  position: relative;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  font-size: 25px;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 30px;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px black;
+}
+
+.input:focus {
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.form_btn {
+  position: absolute;
+  right: 0px;
+  margin: 12px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  font-size: 15px;
+  background-color: #2f74c0;
+  color: white;
+  border-radius: 50px;
+  transition: 0.12 all;
+  box-shadow: 0 0 10px black;
+}
+
+.form_btn:hover {
+  background-color: #2662a3;
+}
+
+.form_btn:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px black;
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: flex-start;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  width: 47.5%;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(50, 195, 205);
+}
+
+.remove {
+  background-color: rgb(235, 103, 80);
+}
+
+.drag_active {
+  background-color: rgb(30, 130, 137);
+}
+.drag_complete {
+  background-color: rgb(178, 71, 52);
+}
+
+.drag {
+  box-shadow: 0 0 100px black;
+}
+
+.todo_heading {
+  font-size: 30px;
+  columns: white;
+}
+
+.todo {
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+  background-image: url("https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg");
+  transition: 0.2;
+}
+
+.todo:hover {
+  box-shadow: 0 0 5px black;
+  transform: scale(1.03);
+}
+
+.todo_text {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+.todo_text:focus {
+  outline: none;
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .Form {
+    width: 95%;
+  }
+  .todos {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+  .container {
+    /* display: flex; */
+    flex-direction: column;
+    width: 95%;
+  }
+}
+
+@media (max-width: 1100) {
+  .todos {
+    width: 45%;
+  }
+}
